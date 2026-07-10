@@ -64,9 +64,3 @@ def angle_between(u, v):
     cos_theta = consine_similarity(u, v)
     return float(np.arccos(np.clip(cos_theta, -1.0, 1.0)))
 
-
-a =  [-3, 4, -2]
-b = [3,4]
-
-result = vector_norms(a)
-print(result)
