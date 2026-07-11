@@ -31,3 +31,27 @@ def hadamard_product(A,B):
     A = np.asarray(A,dtype=float)
     B = np.asarray(B,dtype=float)
     return np.multiply(A,B)
+
+def matrix_multiply(A,B):
+    """
+    Returns: 2-D float64 array, the matrix product A @ B.
+    """
+    A = np.asarray(A,dtype=float)
+    B = np.asarray(B,dtype=float)
+    return A @ B
+
+def matrix_determinant(A):
+    """
+    Returns: float, the determinant of square matrix A.
+    """
+    A = np.asarray(A,dtype=float)
+
+    return float(np.linalg.det(A))
+
+
+def matrix_rank(A):
+    """
+    Returns: int, the rank of matrix A.
+    """
+    A = np.asarray(A,dtype=float)
+    return np.linalg.matrix_rank(A)
